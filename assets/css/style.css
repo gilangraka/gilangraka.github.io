@@ -214,9 +214,6 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  header {
-    flex-wrap: wrap;
-  }
   .nav-navbar {
     display: none;
   }
@@ -226,5 +223,11 @@ footer {
   }
   .hero {
     flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav > .resume {
+    display: none;
   }
 }
