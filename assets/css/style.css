@@ -107,6 +107,7 @@ main {
   display: flex;
   gap: 10px;
   align-items: center;
+  justify-content: center;
 }
 .hero > aside {
   display: flex;
