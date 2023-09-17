@@ -50,6 +50,7 @@ header {
   width: 100%;
   background-color: white;
   box-shadow: 1px 1px 5px 0 var(--Secondary);
+  z-index: 9999;
 }
 header > nav {
   display: flex;
