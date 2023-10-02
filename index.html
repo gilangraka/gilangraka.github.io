@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -36,7 +37,7 @@
     <main>
       <!-- Hero -->
       <section class="hero container" id="hero">
-        <article>
+        <article data-aos="fade-left">
           <div class="judul">
             <h1>Hi, Im Gilang,</h1>
             <h1>ReactJS Developer</h1>
@@ -66,7 +67,7 @@
             </button>
           </div>
         </article>
-        <aside>
+        <aside data-aos="fade-right">
           <img src="./assets/img/Profile.jpg" alt="Profile" />
         </aside>
       </section>
@@ -74,12 +75,12 @@
 
       <!-- Blog -->
       <section class="blog container" id="blog">
-        <div class="judul">
+        <div data-aos="fade-down" class="judul">
           <p>Recent Post</p>
           <a href="#" style="color: #00a8cc">View All</a>
         </div>
 
-        <div class="konten">
+        <div data-aos="fade-down" class="konten">
           <article>
             <!-- Konten Pertama -->
             <div class="konten">
@@ -156,7 +157,7 @@
       <!-- Blog End -->
 
       <!-- Works -->
-      <section class="works container" id="works">
+      <section data-aos="fade-up" class="works container" id="works">
         <div class="judul">
           <p>Featured Works</p>
         </div>
@@ -273,5 +274,20 @@
       </div>
     </footer>
     <!-- Footer End -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 900, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
   </body>
 </html>
