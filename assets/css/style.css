@@ -19,6 +19,21 @@
   --mainFont: "Heebo", sans-serif;
 }
 
+.topBtn {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
 button {
   padding: 10px 20px;
   background-color: var(--Dark);
